@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: "Gemunu Libre", sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background: #5D13E7;
+    background: -webkit-linear-gradient(top left, #5D13E7, #8249B5);
+    background: -moz-linear-gradient(top left, #5D13E7, #8249B5);
+    background: linear-gradient(to bottom right, #5D13E7, #8249B5);
+    display: grid;
+    place-items: center;
+    padding: 12px;
+}
+.app-container{
+    padding: 12px;
+    background-color: #FBFBFB;
+    box-shadow: #32323212;
+    width: 100%;
+    max-width: 500px;
+}
+.quote{
+    margin: 0 0 12px 0;
+}
+.quote .content{
+    font-size: 20px;
+    color: #323232;
+    letter-spacing: 0.6px;
+    margin: 0 0 2px 0;
+}
+.quote .author{
+    text-align: right;
+    font-size: 16px;
+    color: #323232;
+    opacity: 0.7;
+    display: block;
+    letter-spacing: 0.6px;
+}
+.options button{
+    background: #5D13E7;
+    background: -webkit-linear-gradient(top left, #5D13E7, #8249B5);
+    background: -moz-linear-gradient(top left, #5D13E7, #8249B5);
+    background: linear-gradient(to bottom right, #5D13E7, #8249B5);
+    color: #FBFBFB;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
