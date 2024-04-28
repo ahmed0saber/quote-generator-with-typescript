@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,8 @@
     outline: none;
     font-family: "Gemunu Libre", sans-serif;
 }
-body{
+
+body {
     min-height: 100vh;
     width: 100vw;
     background: #5D13E7;
@@ -18,23 +19,27 @@ body{
     place-items: center;
     padding: 12px;
 }
-.app-container{
+
+.app-container {
     padding: 12px;
     background-color: #FBFBFB;
-    box-shadow: #32323212;
+    box-shadow: 0px 0px 2px 2px #32323212;
     width: 100%;
     max-width: 500px;
 }
-.quote{
+
+.quote {
     margin: 0 0 12px 0;
 }
-.quote .content{
+
+.quote .content {
     font-size: 20px;
     color: #323232;
     letter-spacing: 0.6px;
     margin: 0 0 2px 0;
 }
-.quote .author{
+
+.quote .author {
     text-align: right;
     font-size: 16px;
     color: #323232;
@@ -42,16 +47,34 @@ body{
     display: block;
     letter-spacing: 0.6px;
 }
-.options button{
-    background: #5D13E7;
-    background: -webkit-linear-gradient(top left, #5D13E7, #8249B5);
-    background: -moz-linear-gradient(top left, #5D13E7, #8249B5);
-    background: linear-gradient(to bottom right, #5D13E7, #8249B5);
-    color: #FBFBFB;
-    padding: 10px 20px;
+
+.options {
+    display: flex;
+    gap: 8px;
+}
+
+.options button {
     font-size: 16px;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 100%;
     -webkit-tap-highlight-color: transparent;
+}
+
+.options .generate-quote-btn {
+    background: #5D13E7 linear-gradient(to bottom right, #5D13E7, #8249B5);
+    color: #FBFBFB;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.options .copy-quote-btn {
+    background: #FBFBFB;
+    color: #8249B5;
+    border: 2px solid #8249B5;
+    padding: 10px;
+}
+
+.options .copy-quote-btn svg {
+    width: 24px;
+    display: flex;
 }
